@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
-import {RestProvider} from "../../providers/rest/rest";
+import {CountriesService} from "../../providers/rest/countries.service";
 
 @Component({
   selector: 'page-home',
@@ -11,7 +11,7 @@ export class HomePage {
   countries: any;
   errorMessage: string;
 
-  constructor(public navCtrl: NavController, private rest: RestProvider) {
+  constructor(public navCtrl: NavController, private rest: CountriesService) {
 
   }
 
